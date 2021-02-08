@@ -1,0 +1,34 @@
+header{
+  background-color: #099
+}
+section{
+  background-color: yellow;
+    width: 85vw;
+    margin:0;
+    display: flex;
+  flex-direction: column-reverse;
+
+}
+nav {
+  display: flex;
+  background-color: cadetblue ;
+  width: 15vw;
+  flex-shrink: 0;
+}
+
+nav a {
+  background-color: bisque;
+  color: navy;
+  padding: 1em 2em;
+  transition: white 0.7s;
+  text-decoration: none;
+  }
+
+nav a:hover {
+  background-color: blue-green;
+  }
+  
+  flex-direction: column;
+  header, section{
+    overflow: auto;
+  }
