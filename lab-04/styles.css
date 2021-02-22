@@ -2,58 +2,65 @@ body{
   background-color: DarkGray;
   }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  opacity: 0;
-  position:fixed;
-  width:100%;
-  top:0;
-  transform:translateX(100vh);
-  transition: 0.5s;
-}
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transform: translateX(100vw);
+    transition: 0.5s;
 
-nav.open {
-  transform:translateX(0);
-}
 
-div{
-  padding: 1em 1em;
-  font-size:2em;
-  color: black;
+
   }
 
+  nav.open {
+    transform: translateX(0);
 
-nav a {
-  background-color: Crimson;
-  color: CornSilk;
-  padding: 1em 1em;
-  margin: 0.2em;
-  text-decoration: none;
-  font-size: 1em;
-  width: 4em;
-  height: 1em;
-flex-grow: 1;
-  transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: DarkGoldenRod;
-}
-
-@media screen and (min-width: 500px) {
+  }
 
   #menuToggler {
     position: fixed;
-      top:0;
-    right:0;
+    top: 0;
+    right: 0;
     z-index: 1;
+    padding: 2em 2em;
+    font-size:2em;
+    color: black;
   }
+  nav a {
+    background-color: Crimson;
+    color: CornSilk;
+    padding: 1em 1em;
+    margin: 0.2em;
+    text-decoration: none;
+    font-size: 1em;
+    width: 4em;
+    height: 1em;
+  flex-grow: 1;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: DarkGoldenRod;
+  }
+
+
+
+
+@media screen and (min-width: 800px) {
+ #menuToggler{
+  display: none;
+
+}
 
   nav {
     display: flex;
     flex-direction: row;
-  }
+    position: static;
+    transform: translateX(0);
+
+    }
 
 }
